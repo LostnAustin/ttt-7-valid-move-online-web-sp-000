@@ -15,6 +15,14 @@ def valid_move?(board, index)
   end
 end
 
+def input_to_index(input)
+    return (input.to_i - 1)
+  end
+
+  def move(board, input_to_index, token = "X")
+      return board[input_to_index] == token
+
+    end
 
 def position_taken?(board, index)
   if (board[index] == nil) || (board[index] == " ") || (board[index] == "")
